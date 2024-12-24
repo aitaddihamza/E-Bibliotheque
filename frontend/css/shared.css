@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header,
+footer {
+  padding: 1rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header > h1 > a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-style: italic;
+}
+
+main {
+  padding: 3rem 1rem;
+  flex: 1;
+}
+
+aside {
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+aside > ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style-type: none;
+}
+aside > ul > li > a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.search-form {
+  width: calc(100% - 40px - 40%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.search-form > button {
+  border-radius: 0px;
+}
+
+.black-btn,
+.blue-btn,
+.red-btn {
+  height: 40px;
+  padding-inline: 1rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: grid;
+  place-content: center;
+  color: white;
+}
+.black-btn {
+  background-color: black;
+}
+
+.blue-btn {
+  background-color: rgb(0, 4, 255);
+}
+
+.red-btn {
+  background-color: red;
+}
+
+.container {
+  margin-top: 1rem;
+}
+
+.container > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.container > table {
+  width: 100%;
+  text-align: center;
+}
+
+.container > table > thead {
+  background-color: lightblue;
+}
+.container > table > tbody {
+  background-color: whitesmoke;
+}
+
+.container > table > tbody > tr > td:last-child > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}

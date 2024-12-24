@@ -1,0 +1,63 @@
+/* styling pour login et register page */
+.auth-form {
+  max-width: 800px;
+  margin: 4rem auto;
+  border-radius: 20px;
+  box-shadow: 0 0 0.1rem black;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.auth-form > div {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 0.5rem;
+}
+
+.auth-form > h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.auth-form > div > label {
+  font-size: 1rem;
+}
+.auth-form > div > input {
+  height: 40px;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.error {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.success {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.auth-form .black-btn:hover,
+.auth-form .blue-btn:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.auth-form > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+}
